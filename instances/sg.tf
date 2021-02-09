@@ -17,3 +17,22 @@ resource "aws_security_group" "ec2-public-security-group" {
   }
 }
 
+#create SG for ALB to allow traffic in/out
+resource "aws_security_group" "alb-security-group" {
+  name = "ELB-SG"
+  description = "ELB Security Group"
+  vpc_id = data.terraform_remote_state.network-configuration.outputs.vpc_id
+  ingress {
+    from_port = 0
+    protocol = "-1"
+    to_port = 0
+    cidr_blocks = ["0.0.0.0/0"]
+    description = "Allow web traffic to load balancer"
+  }
+  egress {
+    from_port = 0
+    protocol = "-1"
+    to_port = 0
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
