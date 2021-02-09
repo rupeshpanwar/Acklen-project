@@ -27,6 +27,7 @@ A. Create project directory
 git init  
 echo "#Acklen-Devops-Project" >> README.md
 
+```
 #create .gitignore file
 Touch .gitignore
 #login into gitignore.io and generate the code for terraform and add the same in 
@@ -320,6 +321,6 @@ resource "aws_route" "public-internet-gw-route-public-subnet2" {
    git commit -m “Create igw,mapped public subnets”
    git push
 
-￼
+￼```
 ￼
 ￼
