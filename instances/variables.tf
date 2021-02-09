@@ -10,3 +10,11 @@ variable "remote_state_bucket" {
 variable "remote_state_key" {
   description = "Key name for layer 1 remote state"
 }
+
+variable "ec2_instance_type" {
+  description = "instance type of EC2"
+}
+
+variable "key_pair_name" {
+  default = "connective"
+}
