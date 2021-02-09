@@ -18,3 +18,11 @@ variable "ec2_instance_type" {
 variable "key_pair_name" {
   default = "connective"
 }
+
+variable "max_instance_size" {
+  description = "maximum number of EC2 instances"
+}
+
+variable "min_instance_size" {
+  description = "minimum number of EC2 instances"
+}
