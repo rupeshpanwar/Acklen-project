@@ -7,7 +7,7 @@
 
 #connection string
 infrastructure/backend.tf
-
+backend.tf
 # .tfstate files
 *.tfstate
 *.tfstate.*
