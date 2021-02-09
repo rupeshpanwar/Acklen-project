@@ -1,3 +1,4 @@
+```
 #Acklen-Devops-Project
 
 Please find below solution to deploy the infra as a code
@@ -13,8 +14,8 @@ F. Create public subnet
 G. Create public route table
 H. Now Create internet gateway and bind with public route table to allow public access
 
-
-
+```
+```
 A. Create project directory
 
 #step to create directory structure
@@ -26,7 +27,7 @@ A. Create project directory
 #initialise the git and commit initial setup
 git init  
 echo "#Acklen-Devops-Project" >> README.md
-
+```
 ```
 #create .gitignore file
 Touch .gitignore
